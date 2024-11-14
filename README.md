@@ -130,6 +130,7 @@ plt.xlabel("Day of the week")
 plt.ylabel("Total Bill")
 plt.title("Violin Plot of Total Bill by Day and Smoker Status")
 ```
+![image](https://github.com/user-attachments/assets/08513b48-ce23-4d93-b930-cd9b2ec1729f)
 
 ```
 import seaborn as sns
@@ -137,6 +138,7 @@ sns.set(style = 'whitegrid')
 tip = sns.load_dataset('tips')
 sns.violinplot(x ='day', y ='tip', data = tip)
 ```
+![image](https://github.com/user-attachments/assets/bc67da08-b00e-449c-bb82-7a4d0778e56e)
 
 ```
 import seaborn as sns
@@ -144,6 +146,7 @@ sns.set(style = 'whitegrid')
 tip = sns.load_dataset('tips')
 sns.violinplot(x=tip["total_bill"])
 ```
+![image](https://github.com/user-attachments/assets/b0db518d-5287-43ca-b649-65f52a947a9e)
 
 ```
 sns.kdeplot(data=tips,x='total_bill',hue='time',multiple='fill',linewidth=3,palette='Set2',alpha=0.8)
